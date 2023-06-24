@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@color/screenBackgroud"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context=".AddCategory">
+
+    <TextView
+        android:id="@+id/AddCategoryTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Add Category"
+        android:textColor="#555555"
+        android:textSize="24sp"
+        android:textStyle="bold"
+       android:layout_gravity="center_horizontal"
+       />
+
+    <EditText
+        android:id="@+id/AddCategoryNameEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/tv_background"
+        android:ems="10"
+        android:hint="Enter Category Name"
+        android:inputType="textEmailAddress"
+        android:padding="@dimen/EtPadding"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/AddCategoryBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#E54BFF"
+        android:padding="15dp"
+        android:text="add"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp" />
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginTop="2dp"
+    android:background="@drawable/serch_view_bg"
+    android:layoutDirection="ltr"
+    >
+
+    <ImageView
+        android:id="@+id/itemBookingIv"
+        android:scaleType="fitXY"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="24dp"
+        android:src="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemBookingMovieNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="movie name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toEndOf="@+id/itemBookingIv"
+        app:layout_constraintTop_toTopOf="@+id/itemBookingIv" />
+
+    <TextView
+        android:id="@+id/itemBookingMovieRateTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="movie rate"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/itemBookingMovieNameTv"
+        app:layout_constraintTop_toBottomOf="@+id/itemBookingMovieNameTv" />
+
+    <ImageView
+        android:id="@+id/itemBookingStarIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:src="@drawable/ic_star"
+        app:layout_constraintStart_toEndOf="@id/itemBookingMovieRateTv"
+        app:layout_constraintTop_toTopOf="@id/itemBookingMovieRateTv" />
+
+    <TextView
+        android:id="@+id/itemBookingMovieDateTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="movie date"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/itemBookingMovieNameTv"
+        app:layout_constraintTop_toBottomOf="@+id/itemBookingMovieRateTv" />
+
+    <TextView
+        android:id="@+id/itemBookingSeatsTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="ticekt"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/itemBookingMovieNameTv"
+        app:layout_constraintTop_toBottomOf="@+id/itemBookingMovieDateTv" />
+
+    <TextView
+        android:id="@+id/itemBookingTicektTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        android:textStyle="bold"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/itemBookingSeatsTv"
+        app:layout_constraintTop_toTopOf="@id/itemBookingSeatsTv"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

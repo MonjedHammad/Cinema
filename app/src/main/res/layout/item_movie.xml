@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:padding="10dp"
+    android:layoutDirection="ltr"
+    >
+
+    <ImageView
+        android:id="@+id/ItemMovieImageIv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@color/purple_700"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitXY"
+        />
+
+    <TextView
+        android:id="@+id/itemMovieNameEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Movie Name"
+        android:textColor="#555555"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ItemMovieImageIv" />
+
+    <TextView
+        android:id="@+id/itemMovieRateEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="rate"
+        android:textColor="#555555"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@id/itemMovieStarIv"
+        app:layout_constraintTop_toTopOf="@id/itemMovieNameEt"
+        app:layout_goneMarginStart="20dp" />
+
+    <TextView
+        android:id="@+id/itemMovieDateEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="29-2-2022"
+        android:textColor="#555555"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/itemMovieNameEt"
+        app:layout_constraintTop_toBottomOf="@id/itemMovieNameEt"
+        app:layout_goneMarginStart="20dp" />
+
+    <TextView
+        android:id="@+id/itemMovieNumOfsetsTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:text="number of sets"
+        android:textColor="#555555"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemMovieNameEt" />
+
+    <TextView
+        android:id="@+id/itemMovieNumTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="76dp"
+        android:text="20"
+        android:textStyle="bold"
+        android:textColor="#303030"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/itemMovieNumOfsetsTv"
+        app:layout_constraintTop_toBottomOf="@id/itemMovieNameEt" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/itemMovieStarIv"
+        android:src="@drawable/ic_star"
+        app:layout_constraintEnd_toEndOf="@id/itemMovieNumTv"
+        app:layout_constraintBottom_toBottomOf="@id/itemMovieRateEt"
+        android:layout_marginStart="5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

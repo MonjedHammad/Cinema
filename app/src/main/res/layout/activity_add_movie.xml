@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/screenBackgroud"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".AddMovie"
+    android:layoutDirection="ltr"
+    >
+
+<!--    <TextView-->
+<!--        android:id="@+id/AddMovieTv"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:text="Add Movie"-->
+<!--        android:textColor="#555555"-->
+<!--        android:textSize="24sp"-->
+<!--        android:textStyle="bold" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/AddMovieIv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:layout_height="200dp"
+            tools:src="@color/purple_700" />
+
+        <EditText
+            android:id="@+id/AddMovieNameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/tv_background"
+            android:ems="10"
+            android:hint="Enter Movie Name"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/EtPadding"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/AddMovieDescriptionEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/tv_background"
+            android:ems="10"
+            android:hint="Enter The Description"
+            android:inputType="text"
+            android:padding="@dimen/EtPadding"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/AddMovieRateEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/tv_background"
+            android:ems="10"
+            android:hint="Enter The Rate of Movie"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/EtPadding"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/AddMovieDateEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/tv_background"
+            android:ems="10"
+            android:hint="Enter The Date of Movie"
+            android:inputType="date"
+            android:padding="@dimen/EtPadding"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/AddMovieSeatsEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/tv_background"
+            android:ems="10"
+            android:hint="Enter The Number of Seats"
+            android:inputType="number"
+            android:padding="@dimen/EtPadding"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/addMovieChooseTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Choose a movie category"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/addMovieCategorySp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/MovieCategory"
+            />
+        <Button
+            android:id="@+id/AddMovieBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#E54BFF"
+            android:padding="15dp"
+            android:text="add"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/AddMovieUpdateBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#E54BFF"
+            android:padding="15dp"
+            android:text="Update"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</ScrollView>
